@@ -165,3 +165,71 @@
 // }
 // confuseReader();
 // console.log("outside function:",x);
+
+//                                                Immediately Invoked Function Expression (IIFE)
+// (function(){
+//     console.log("I am an IIFE");
+// })();
+
+// (()=>{
+//     console.log("run right away");
+// })();
+
+// function getRecursive(nr){
+//     console.log(nr);
+//     getRecursive(--nr);
+// }
+// getRecursive(5);
+
+// function getRecursive(nr){
+//     console.log(nr);
+//     if(nr > 0){
+//         getRecursive(--nr);
+//     }
+// }
+// getRecursive(3);
+
+// function logRecursive(nr){
+//     console.log("started function:", nr);
+//     if(nr > 0){
+//         logRecursive(nr-1);
+//     } else {
+//         console.log("done with recursion");
+//     }
+//     console.log("ended function:", nr);
+// }
+// logRecursive(3);
+
+
+//                                                            Nested Functions
+
+// function doOuterFunctionStuff(nr){
+//     console.log("Outer Function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7);
+//         console.log("I can access outer variables:", nr);
+//     }
+// }
+
+
+//                                                            Anonymous Function
+
+// let functionVariable = function(){
+//     console.log("not so secret though.");
+// };
+
+
+//                                                            Function Callbacks
+
+// function doFlexibleStuff(executeStuff) {
+//     executeStuff();
+//     console.log("Inside doFlexibleStuff.");
+// }
+
+// let youGotThis = function() {
+//     console.log("your're doing really well, keep coding");
+// }
+// // setTimeout(youGotThis, 1000);
+// setInterval(youGotThis, 1000);
+
