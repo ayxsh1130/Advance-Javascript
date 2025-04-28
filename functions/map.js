@@ -169,7 +169,41 @@
 // x **= 2;
 // console.log(x); // 25
 
+//                                            ***************JavaCript includes*************
+
+// const fruits = ["Banana", "Apple", "Orange", "Mango"];
+// fruits.includes("Banana"); // true
+// fruits.includes("Banana", 2); // false
+
+////                                    **************TRAILING COMMA***************
+// also known as dangling and terminal commma, that is typed after the last element of the list of objects
+
+// const arr = [
+//     "one",
+//     "two",
+//     "three",
+// ];
+
+// // dont add more than one comma at the end or u will create an undefined element
+// const arr = [
+//     "one",
+//     "two",
+//     "three",, // this will create an undefined element
+// ];
+// console.log(arr.length); // [ 'one', 'two', 'three', <1 empty item> ]
+
+// const sparseArray = [1, 2, 3, , , 5];
+// console.log(sparseArray.length); // 5
+// the value of the length property indicate the number of elements in the array, not the number of elements that are defined
+
+// const arr = [,];
+// console.log(arr.length); // 1
 
 
-
+// const person = {
+//     firstName: "Mays",
+//     ,
+//     age: 20,
+// };
+// unexpected token
 
