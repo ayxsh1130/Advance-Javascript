@@ -156,3 +156,20 @@
 // motor.move();
 
 //                          ******************PROTOTYPES****************
+
+class Person{
+    constructor(firstName,lastName){
+        this.firstName=firstName;
+        this.lastName=lastName;
+    }
+    greet(){
+        Person.prototype.introduce=function(){
+            console.log("Hi there! I'm",this.firstName);
+        }
+        Person.prototype.favoritecolor= "green";
+        
+        let p = new Person("Maria","Saga");
+        console.log(p.favoritecolor);
+        p.introduce();
+    }
+}
